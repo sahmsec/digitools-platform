@@ -5,14 +5,14 @@
     "description": "Generate blogs, ads, and content instantly using advanced AI tools.",
     "price": 29,
     "period": "monthly",
-    "tag": "best seller",
+    "tag": "bestseller",
     "tagType": "Best Seller",
     "features": [
       "Unlimited AI content",
       "50+ templates",
       "Grammar checker"
     ],
-    "icon": "/assets/products/writing.png"
+    "icon": "https://i.ibb.co.com/v6kBN15K/writing-2327400-1.png"
   },
   {
     "id": 2,
@@ -27,7 +27,7 @@
       "Figma & PSD files",
       "Commercial license"
     ],
-    "icon": "/assets/products/design-tool.png"
+    "icon": "https://i.ibb.co.com/Ndq2y6NQ/design-tool.png"
   },
   {
     "id": 3,
@@ -42,7 +42,7 @@
       "HD downloads",
       "No attribution"
     ],
-    "icon": "/assets/products/portfolio.png"
+    "icon": "https://i.ibb.co.com/ZRft094j/portfolio.png"
   },
   {
     "id": 4,
@@ -57,7 +57,7 @@
       "Workflow builder",
       "Real-time sync"
     ],
-    "icon": "/assets/products/operation.png"
+    "icon": "https://i.ibb.co.com/MkcHYmhZ/operation.png"
   },
   {
     "id": 5,
@@ -72,7 +72,7 @@
       "Export to PDF",
       "AI suggestions"
     ],
-    "icon": "/assets/products/user.png"
+    "icon": "https://i.ibb.co.com/rGw7hqcg/user.png"
   },
   {
     "id": 6,
@@ -80,14 +80,14 @@
     "description": "Tools for building and managing online stores efficiently.",
     "price": 59,
     "period": "one-time",
-    "tag": "best seller",
+    "tag": "bestseller",
     "tagType": "Best Seller",
     "features": [
       "Store templates",
       "Payment integration",
       "Analytics dashboard"
     ],
-    "icon": "/assets/products/shopping-cart.png"
+    "icon": "https://i.ibb.co.com/spjczP6W/shopping-cart.png"
   },
   {
     "id": 7,
@@ -102,6 +102,6 @@
       "Post templates",
       "Performance analytics"
     ],
-    "icon": "/assets/products/social-media.png"
+    "icon": "https://i.ibb.co.com/W4G6nFBc/social-media.png"
   }
 ]

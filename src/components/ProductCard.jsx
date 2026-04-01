@@ -3,7 +3,12 @@ import { Check } from "lucide-react";
 
 const ProductCard = ({ product }) => {
 
-    const { name, description, price, period, icon, features, tagType } = product;
+    const { name, description, price, period, tag, icon, features, tagType } = product;
+    const tagStyles = {
+        popular: "bg-purple-100 text-purple-700",
+        new: "bg-green-100 text-green-700",
+        bestseller: "bg-orange-100 text-orange-600",
+    };
 
     return (
         <div className="border rounded-2xl p-6 shadow-sm hover:shadow-md transition bg-white">
@@ -15,7 +20,12 @@ const ProductCard = ({ product }) => {
                     <img src={icon} className="w-6 h-6" />
                 </div>
 
-                <span className="bg-orange-100 text-orange-600 text-xs px-3 py-1 rounded-full">
+                <span
+                    className={`text-xs px-3 py-1 rounded-full
+                         ${tagStyles[tag.toLowerCase()] 
+                         || "bg-gray-100 text-gray-600"
+                        }`}
+                >
                     {tagType}
                 </span>
 

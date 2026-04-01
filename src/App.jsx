@@ -4,6 +4,7 @@ import Navbar from './components/Navbar'
 import Banner from './components/Banner'
 import Stats from './components/Stats'
 import ProductsSection from './sections/ProductsSection'
+import Steps from './components/Steps'
 
 
 const getProducts = async () => {
@@ -23,6 +24,7 @@ function App() {
       <Stats />
 
       <ProductsSection carts={carts} setCarts={setCarts} productPromise={productPromise}/>
+      <Steps/>
 
 
     </div>

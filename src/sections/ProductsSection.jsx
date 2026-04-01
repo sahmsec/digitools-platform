@@ -1,5 +1,6 @@
 import React, { use, useState } from 'react';
 import ProductCard from '../components/ProductCard';
+import Cart from '../components/Cart';
 
 const ProductsSection = ({ productPromise, carts, setCarts }) => {
 
@@ -58,11 +59,11 @@ const ProductsSection = ({ productPromise, carts, setCarts }) => {
                 )
             }
 
+            {/* cart renders here */}
+
             {
                 activeTab === "cart" && (
-                    <p className="text-center mt-10">
-                        Cart items: {carts.length}
-                    </p>
+                    <Cart carts={carts} setCarts={setCarts} />
                 )
             }
 

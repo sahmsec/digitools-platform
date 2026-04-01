@@ -7,6 +7,8 @@ const Cart = ({ carts, setCarts }) => {
     const handleRemove = (id) => {
         const updated = carts.filter(item => item.id !== id);
         setCarts(updated);
+        toast.error("Item Removed!");
+
     };
 
     const handleCheckout = () => {
@@ -52,7 +54,7 @@ const Cart = ({ carts, setCarts }) => {
 
                                         <button
                                             onClick={() => handleRemove(item.id)}
-                                            className="text-red-500 text-sm flex items-center gap-1"
+                                            className="text-red-500 text-sm flex items-center gap-1 hover:cursor-pointer"
                                         >
                                             <Trash2 size={16} /> Remove
                                         </button>

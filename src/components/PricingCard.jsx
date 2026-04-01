@@ -5,7 +5,7 @@ const PricingCard = ({ plan }) => {
 
     return (
         <div
-            className={`p-6 rounded-xl aspect-3.5/4 flex flex-col transition-all duration-300 ease-out cursor-pointer ${plan.type === "highlight"
+            className={`p-6 rounded-xl aspect-3.5/4 flex flex-col transition-all duration-300 ease-out ${plan.type === "highlight"
                     ? "bg-linear-to-r from-[#4F39F6] to-[#9514FA] text-white relative hover:-translate-y-2 hover:scale-[1.02] hover:shadow-[0_10px_30px_rgba(79,57,246,0.3)]"
                     : "border border-gray-300 bg-gray-100 hover:-translate-y-2 hover:scale-[1.02] hover:shadow-lg"
                 }`}
@@ -38,7 +38,7 @@ const PricingCard = ({ plan }) => {
 
             {/* Button */}
             <button
-                className={`btn mt-auto w-full py-3 rounded-full ${plan.type === "highlight"
+                className={`btn mt-auto w-full py-3 rounded-full hover:cursor-pointer ${plan.type === "highlight"
                     ? "bg-white text-purple-600"
                     : "bg-linear-to-r from-[#4F39F6] to-[#9514FA] text-white"
                     }`}

@@ -32,7 +32,7 @@ const ProductCard = ({ product, carts, setCarts }) => {
     return (
         <div className="border rounded-2xl p-6 shadow-sm bg-white 
     transition-all duration-300 ease-out 
-    hover:-translate-y-2 hover:shadow-xl hover:scale-[1.02] cursor-pointer">
+    hover:-translate-y-2 hover:shadow-xl hover:scale-[1.02] ">
 
             {/* Top */}
             <div className="flex justify-between items-center">
@@ -83,7 +83,7 @@ const ProductCard = ({ product, carts, setCarts }) => {
             {/* Button */}
             <button
                 onClick={handleAddToCart}
-                className="mt-6 w-full py-3 rounded-full text-white font-medium bg-linear-to-r from-[#4F39F6] to-[#9514FA] hover:opacity-90 transition"
+                className="mt-6 w-full py-3 rounded-full text-white font-medium bg-linear-to-r from-[#4F39F6] to-[#9514FA] hover:opacity-90 transition cursor-pointer"
             >
                 {added ? "Added" : "Buy Now"}
             </button>

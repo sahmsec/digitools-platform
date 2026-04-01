@@ -4,13 +4,13 @@ import React from 'react';
 const Navbar = () => {
     return (
         <div className=''>
-            <div className="flex justify-between navbar bg-base-100 px-10 py-3 max-w-7xl mx-auto my-2">
+            <div className="flex justify-between navbar bg-base-100 px-10 py-5 max-w-7xl mx-auto my-2">
 
                 {/* Left - Logo */}
                 <div className="">
-                    <h1 className="text-2xl font-bold text-purple-600">
+                    <p className="btn btn-ghost text-3xl font-extrabold bg-linear-to-r from-[#4F39F6] to-[#9514FA] bg-clip-text text-transparent">
                         DigiTools
-                    </h1>
+                    </p>
                 </div>
 
                 {/* Center - Links */}
@@ -36,7 +36,7 @@ const Navbar = () => {
                     </button>
 
                     {/* Get Started */}
-                    <button className="btn bg-purple-600 text-white rounded-full px-5 hover:bg-purple-700">
+                    <button className="btn bg-linear-to-r from-[#4F39F6] to-[#9514FA] text-white rounded-full px-5 hover:bg-purple-700">
                         Get Started
                     </button>
 

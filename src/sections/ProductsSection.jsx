@@ -13,7 +13,7 @@ const ProductsSection = ({ productPromise, carts, setCarts }) => {
 
             {/* Heading */}
             <div className="text-center max-w-xl mx-auto">
-                <h2 className="text-3xl font-bold">
+                <h2 className="text-5xl font-extrabold">
                     Premium Digital Tools
                 </h2>
                 <p className="mt-3 text-gray-500 text-sm">
@@ -26,7 +26,7 @@ const ProductsSection = ({ productPromise, carts, setCarts }) => {
                 <input
                     type="radio"
                     name="tabs"
-                    className="tab rounded-full w-40 checked:bg-purple-600 checked:text-white"
+                    className="tab rounded-full w-40 checked:bg-linear-to-r from-[#4F39F6] to-[#9514FA] checked:text-white"
                     aria-label="Products"
                     defaultChecked
                     onClick={() => setActiveTab("products")}
@@ -35,7 +35,7 @@ const ProductsSection = ({ productPromise, carts, setCarts }) => {
                 <input
                     type="radio"
                     name="tabs"
-                    className="tab rounded-full w-40 checked:bg-purple-600 checked:text-white"
+                    className="tab rounded-full w-40 checked:bg-linear-to-r from-[#4F39F6] to-[#9514FA] checked:text-white"
                     aria-label={`Cart(${carts.length})`}
                     onClick={() => setActiveTab("cart")}
                 />

@@ -1,22 +1,24 @@
 import React from "react";
-import { User, Box, Rocket } from "lucide-react";
+import userIcon from "../assets/user.png";
+import packageIcon from "../assets/package.png";
+import rocketIcon from "../assets/rocket.png";
 
 const steps = [
     {
         id: "01",
-        icon: <User size={40} />,
+        icon: userIcon,
         title: "Create Account",
         desc: "Sign up for free in seconds. No credit card required to get started.",
     },
     {
         id: "02",
-        icon: <Box size={40} />,
+        icon: packageIcon,
         title: "Choose Products",
         desc: "Browse our catalog and select the tools that fit your needs.",
     },
     {
         id: "03",
-        icon: <Rocket size={40} />,
+        icon: rocketIcon,
         title: "Start Creating",
         desc: "Download and start using your premium tools immediately.",
     },
@@ -47,13 +49,13 @@ const Steps = () => {
                         >
 
                             {/* Step number */}
-                            <div className="absolute top-4 right-4 bg-purple-600 text-white text-xs w-8 h-8 flex items-center justify-center rounded-full">
+                            <div className="absolute top-4 right-4 bg-linear-to-r from-[#4F39F6] to-[#9514FA] text-white text-xs w-8 h-8 flex items-center justify-center rounded-full">
                                 {step.id}
                             </div>
 
                             {/* Icon */}
                             <div className="w-20 h-20 mx-auto mb-6 flex items-center justify-center rounded-full bg-purple-100 text-purple-600">
-                                {step.icon}
+                                <img src={step.icon} alt={step.title} className="w-10 h-10" />
                             </div>
 
                             {/* Title */}

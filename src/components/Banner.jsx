@@ -30,7 +30,7 @@ const Banner = () => {
                     </span>
 
                     {/* left side content */}
-                    <h1 className="text-5xl font-bold mt-4 leading-tight">
+                    <h1 className="text-6xl font-extrabold mt-4 leading-tight">
                         Supercharge Your <br /> Digital Workflow
                     </h1>
 
@@ -42,7 +42,7 @@ const Banner = () => {
 
                     {/* details & button*/}
                     <div className="mt-6 flex gap-4">
-                        <button className="btn bg-purple-600 text-white rounded-full px-6 hover:bg-purple-700">
+                        <button className="btn bg-linear-to-r from-[#4F39F6] to-[#9514FA] text-white rounded-full px-6 hover:bg-purple-700">
                             Explore Products
                         </button>
 

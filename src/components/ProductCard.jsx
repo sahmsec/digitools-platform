@@ -81,7 +81,7 @@ const ProductCard = ({ product, carts, setCarts }) => {
             {/* Button */}
             <button
                 onClick={handleAddToCart}
-                className="mt-6 w-full py-3 rounded-full text-white font-medium bg-linear-to-r from-purple-600 to-purple-500 hover:opacity-90 transition"
+                className="mt-6 w-full py-3 rounded-full text-white font-medium bg-linear-to-r from-[#4F39F6] to-[#9514FA] hover:opacity-90 transition"
             >
                 {added ? "Added" : "Buy Now"}
             </button>

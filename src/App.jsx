@@ -5,6 +5,7 @@ import Banner from './components/Banner'
 import Stats from './components/Stats'
 import ProductsSection from './sections/ProductsSection'
 import Steps from './components/Steps'
+import PricingSection from './sections/PricingSection'
 
 
 const getProducts = async () => {
@@ -12,7 +13,15 @@ const getProducts = async () => {
   return res.json();
 };
 
-const productPromise=getProducts();
+const getPricing = async () => {
+  const res = await fetch("/pricing.json");
+  return res.json();
+};
+
+const pricingPromise = getPricing();
+const productPromise = getProducts();
+
+
 
 function App() {
   const [carts, setCarts] = useState([]);
@@ -23,8 +32,9 @@ function App() {
       <Banner />
       <Stats />
 
-      <ProductsSection carts={carts} setCarts={setCarts} productPromise={productPromise}/>
-      <Steps/>
+      <ProductsSection carts={carts} setCarts={setCarts} productPromise={productPromise} />
+      <Steps />
+      <PricingSection pricingPromise={pricingPromise}/>
 
 
     </div>

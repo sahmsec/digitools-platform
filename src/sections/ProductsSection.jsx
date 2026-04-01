@@ -47,7 +47,11 @@ const ProductsSection = ({ productPromise, carts, setCarts }) => {
                     <div className="grid md:grid-cols-3 gap-6 mt-10">
                         {
                             products.map(product => (
-                                <ProductCard key={product.id} product={product} />
+                                <ProductCard
+                                    key={product.id}
+                                    product={product}
+                                    carts={carts}
+                                    setCarts={setCarts} />
                             ))
                         }
                     </div>

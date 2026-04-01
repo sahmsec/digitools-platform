@@ -1,14 +1,33 @@
-import React from 'react';
+import React, { useState } from 'react';
 import { Check } from "lucide-react";
+import { toast } from 'react-toastify';
 
-const ProductCard = ({ product }) => {
+const ProductCard = ({ product, carts, setCarts }) => {
+
+    const [added, setAdded] = useState(false);
 
     const { name, description, price, period, tag, icon, features, tagType } = product;
+
     const tagStyles = {
         popular: "bg-purple-100 text-purple-700",
         new: "bg-green-100 text-green-700",
         bestseller: "bg-orange-100 text-orange-600",
     };
+
+    const handleAddToCart = () => {
+
+        const isFound = carts.find(item => item.id === product.id);
+
+        if (isFound) {
+            toast.error(product.name + " already added!");
+            return;
+        }
+
+        setCarts([...carts, product]);
+        setAdded(true);
+        toast.success(product.name + " added!");
+    };
+
 
     return (
         <div className="border rounded-2xl p-6 shadow-sm hover:shadow-md transition bg-white">
@@ -22,8 +41,8 @@ const ProductCard = ({ product }) => {
 
                 <span
                     className={`text-xs px-3 py-1 rounded-full
-                         ${tagStyles[tag.toLowerCase()] 
-                         || "bg-gray-100 text-gray-600"
+                         ${tagStyles[tag.toLowerCase()]
+                        || "bg-gray-100 text-gray-600"
                         }`}
                 >
                     {tagType}
@@ -60,8 +79,11 @@ const ProductCard = ({ product }) => {
             </ul>
 
             {/* Button */}
-            <button className="mt-6 w-full py-3 rounded-full text-white font-medium bg-gradient-to-r from-purple-600 to-purple-500 hover:opacity-90 transition">
-                Buy Now
+            <button
+                onClick={handleAddToCart}
+                className="mt-6 w-full py-3 rounded-full text-white font-medium bg-linear-to-r from-purple-600 to-purple-500 hover:opacity-90 transition"
+            >
+                {added ? "Added" : "Buy Now"}
             </button>
 
         </div>

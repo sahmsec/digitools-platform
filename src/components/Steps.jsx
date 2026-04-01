@@ -27,7 +27,7 @@ const steps = [
 const Steps = () => {
     return (
         <div className="py-20 bg-gray-50">
-            <div className="max-w-6xl mx-auto px-4">
+            <div className="max-w-7xl mx-auto px-10">
 
                 {/* Heading */}
                 <div className="text-center mb-14">
@@ -45,7 +45,7 @@ const Steps = () => {
                     {steps.map((step) => (
                         <div
                             key={step.id}
-                            className="relative bg-white rounded-2xl p-15 text-center shadow-sm hover:shadow-md transition"
+                            className="relative bg-white rounded-2xl p-15 text-center shadow-sm transition-all duration-300 hover:shadow-md hover:-translate-y-1"
                         >
 
                             {/* Step number */}

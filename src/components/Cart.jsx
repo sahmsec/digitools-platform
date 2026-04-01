@@ -1,5 +1,6 @@
 import React from 'react';
 import { ShoppingCart, Trash2 } from "lucide-react";
+import { toast } from 'react-toastify';
 
 const Cart = ({ carts, setCarts }) => {
 
@@ -10,6 +11,7 @@ const Cart = ({ carts, setCarts }) => {
 
     const handleCheckout = () => {
         setCarts([]);
+        toast.success("Checkout success!");
     };
 
     const total = carts.reduce((sum, item) => sum + item.price, 0);

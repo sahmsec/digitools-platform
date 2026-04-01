@@ -2,7 +2,7 @@ const Stats = () => {
     return (
         <div className="py-20 bg-linear-to-r from-[#4F39F6] to-[#9514FA]">
 
-            <div className="max-w-6xl mx-auto flex items-center justify-between text-white">
+            <div className="max-w-7xl px-10 mx-auto flex items-center justify-between text-white">
 
                {/* left */}
                 <div className="text-center flex-1">

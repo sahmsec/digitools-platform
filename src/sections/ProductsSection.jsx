@@ -2,9 +2,10 @@ import React, { use, useState } from 'react';
 import ProductCard from '../components/ProductCard';
 import Cart from '../components/Cart';
 
-const ProductsSection = ({ productPromise, carts, setCarts }) => {
+const ProductsSection = ({ carts, setCarts, activeTab, setActiveTab, productPromise }) => {
 
-    const [activeTab, setActiveTab] = useState("products");
+    // const [activeTab, setActiveTab] = useState("products");
+
     const products = use(productPromise);
 
 
@@ -26,18 +27,19 @@ const ProductsSection = ({ productPromise, carts, setCarts }) => {
                 <input
                     type="radio"
                     name="tabs"
-                    className="tab rounded-full w-40 checked:bg-linear-to-r from-[#4F39F6] to-[#9514FA] checked:text-white"
+                    className="tab rounded-full w-40 checked:bg-linear-to-r from-[#4F39F6] to-[#9514FA] hover:opacity-90 checked:text-white"
                     aria-label="Products"
-                    defaultChecked
-                    onClick={() => setActiveTab("products")}
+                    checked={activeTab === "products"}
+                    onChange={() => setActiveTab("products")}
                 />
 
                 <input
                     type="radio"
                     name="tabs"
-                    className="tab rounded-full w-40 checked:bg-linear-to-r from-[#4F39F6] to-[#9514FA] checked:text-white"
+                    className="tab rounded-full w-40 checked:bg-linear-to-r from-[#4F39F6] to-[#9514FA] hover:opacity-90 checked:text-white"
                     aria-label={`Cart(${carts.length})`}
-                    onClick={() => setActiveTab("cart")}
+                    checked={activeTab === "cart"}
+                    onChange={() => setActiveTab("cart")}
                 />
             </div>
 

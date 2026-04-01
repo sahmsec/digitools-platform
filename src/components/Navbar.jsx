@@ -3,8 +3,8 @@ import React from 'react';
 
 const Navbar = () => {
     return (
-        <div className='max-w-7xl mx-auto'>
-            <div className="flex justify-between navbar bg-base-100 px-10 py-3 shadow-sm">
+        <div className=''>
+            <div className="flex justify-between navbar bg-base-100 px-10 py-3 max-w-7xl mx-auto my-2">
 
                 {/* Left - Logo */}
                 <div className="">
@@ -43,6 +43,7 @@ const Navbar = () => {
                 </div>
 
             </div>
+            <hr className="border-none h-px bg-gray-500/30" />
         </div>
     );
 };

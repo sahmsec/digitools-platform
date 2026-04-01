@@ -1,16 +1,11 @@
-import React, { useEffect, useState } from 'react';
+import React, { use, useState } from 'react';
+import ProductCard from '../components/ProductCard';
 
-const ProductsSection = ({ carts, setCarts }) => {
+const ProductsSection = ({ productPromise, carts, setCarts }) => {
 
-    const [products, setProducts] = useState([]);
     const [activeTab, setActiveTab] = useState("products");
+    const products = use(productPromise);
 
-
-    useEffect(() => {
-        fetch("/products.json")
-            .then(res => res.json())
-            .then(data => setProducts(data));
-    }, []);
 
     return (
         <div className="max-w-7xl mx-auto px-10 py-16">
@@ -45,12 +40,17 @@ const ProductsSection = ({ carts, setCarts }) => {
                 />
             </div>
 
-            {/* Content */}
+            {/* card renders here */}
+
             {
                 activeTab === "products" && (
-                    <p className="text-center mt-10">
-                        Total Products: {products.length}
-                    </p>
+                    <div className="grid md:grid-cols-3 gap-6 mt-10">
+                        {
+                            products.map(product => (
+                                <ProductCard key={product.id} product={product} />
+                            ))
+                        }
+                    </div>
                 )
             }
 

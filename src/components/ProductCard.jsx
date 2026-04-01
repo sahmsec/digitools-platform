@@ -1,0 +1,61 @@
+import React from 'react';
+import { Check } from "lucide-react";
+
+const ProductCard = ({ product }) => {
+
+    const { name, description, price, period, icon, features, tagType } = product;
+
+    return (
+        <div className="border rounded-2xl p-6 shadow-sm hover:shadow-md transition bg-white">
+
+            {/* Top */}
+            <div className="flex justify-between items-center">
+
+                <div className="w-12 h-12 bg-gray-100 rounded-full flex items-center justify-center">
+                    <img src={icon} className="w-6 h-6" />
+                </div>
+
+                <span className="bg-orange-100 text-orange-600 text-xs px-3 py-1 rounded-full">
+                    {tagType}
+                </span>
+
+            </div>
+
+            {/* Title */}
+            <h3 className="mt-5 font-bold text-xl text-gray-800">
+                {name}
+            </h3>
+
+            {/* Description */}
+            <p className="text-sm text-gray-500 mt-2">
+                {description}
+            </p>
+
+            {/* Price */}
+            <p className="mt-4 text-2xl font-bold text-gray-900">
+                ${price}
+                <span className="text-sm text-gray-500 font-normal">/{period}</span>
+            </p>
+
+            {/* Features */}
+            <ul className="mt-4 space-y-2 text-sm text-gray-600">
+                {
+                    features.map((f, i) => (
+                        <li key={i} className="flex items-center gap-2">
+                            <Check className="text-green-500 w-4 h-4" />
+                            {f}
+                        </li>
+                    ))
+                }
+            </ul>
+
+            {/* Button */}
+            <button className="mt-6 w-full py-3 rounded-full text-white font-medium bg-gradient-to-r from-purple-600 to-purple-500 hover:opacity-90 transition">
+                Buy Now
+            </button>
+
+        </div>
+    );
+};
+
+export default ProductCard;

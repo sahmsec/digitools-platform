@@ -1,0 +1,107 @@
+[
+  {
+    "id": 1,
+    "name": "AI Writing Pro",
+    "description": "Generate blogs, ads, and content instantly using advanced AI tools.",
+    "price": 29,
+    "period": "monthly",
+    "tag": "best seller",
+    "tagType": "Best Seller",
+    "features": [
+      "Unlimited AI content",
+      "50+ templates",
+      "Grammar checker"
+    ],
+    "icon": "/assets/products/writing.png"
+  },
+  {
+    "id": 2,
+    "name": "Design Toolkit",
+    "description": "Access premium UI kits, templates, and design resources.",
+    "price": 49,
+    "period": "one-time",
+    "tag": "popular",
+    "tagType": "Popular",
+    "features": [
+      "2000+ templates",
+      "Figma & PSD files",
+      "Commercial license"
+    ],
+    "icon": "/assets/products/design-tool.png"
+  },
+  {
+    "id": 3,
+    "name": "Stock Asset Library",
+    "description": "Millions of royalty-free images, videos, and graphics.",
+    "price": 19,
+    "period": "monthly",
+    "tag": "new",
+    "tagType": "New",
+    "features": [
+      "10M+ assets",
+      "HD downloads",
+      "No attribution"
+    ],
+    "icon": "/assets/products/portfolio.png"
+  },
+  {
+    "id": 4,
+    "name": "Automation Suite",
+    "description": "Automate workflows and integrate apps seamlessly.",
+    "price": 39,
+    "period": "monthly",
+    "tag": "popular",
+    "tagType": "Popular",
+    "features": [
+      "100+ integrations",
+      "Workflow builder",
+      "Real-time sync"
+    ],
+    "icon": "/assets/products/operation.png"
+  },
+  {
+    "id": 5,
+    "name": "Resume Builder Pro",
+    "description": "Create professional resumes with AI-powered suggestions.",
+    "price": 15,
+    "period": "yearly",
+    "tag": "new",
+    "tagType": "New",
+    "features": [
+      "ATS optimization",
+      "Export to PDF",
+      "AI suggestions"
+    ],
+    "icon": "/assets/products/user.png"
+  },
+  {
+    "id": 6,
+    "name": "E-commerce Toolkit",
+    "description": "Tools for building and managing online stores efficiently.",
+    "price": 59,
+    "period": "one-time",
+    "tag": "best seller",
+    "tagType": "Best Seller",
+    "features": [
+      "Store templates",
+      "Payment integration",
+      "Analytics dashboard"
+    ],
+    "icon": "/assets/products/shopping-cart.png"
+  },
+  {
+    "id": 7,
+    "name": "Social Media Kit",
+    "description": "Create engaging posts and manage campaigns easily.",
+    "price": 25,
+    "period": "monthly",
+    "tag": "popular",
+    "tagType": "Popular",
+    "features": [
+      "Content planner",
+      "Post templates",
+      "Performance analytics"
+    ],
+    "icon": "/assets/products/social-media.png"
+  }
+]

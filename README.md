@@ -24,7 +24,7 @@ The **DigiTools Platform** is a modern web application built with **React, Vite,
 | Build Tool     | Vite                                |
 | Styling        | Tailwind CSS + DaisyUI              |
 | State Mgmt     | React Hooks (`useState`, `use`)     |
-| Icons          | Lucide React                        |
+| Icons          | Lucide React, React Icons                        |
 
 ---
 
